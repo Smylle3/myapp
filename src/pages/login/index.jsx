@@ -26,9 +26,9 @@ export default function Login() {
             <Input label="Senha" password value = {password} setValue = {setPassword}></Input>
             <BoxButton>
                 <Button onClick={handleLogin} >Entrar</Button>
-                <TranspButton href="/signup">Cadastrar</TranspButton>
+                <a href="signup"><TranspButton>Cadastrar</TranspButton></a>
             </BoxButton>
-            <LinkButton href="/forgot-password">Esqueci a senha</LinkButton>
+            <LinkButton>Esqueci a senha</LinkButton>
         </BoxLogin>
 
       </AppBody>

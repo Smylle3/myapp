@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NoColorButton = styled.button`
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     background-color: transparent;
     margin-top: 1rem;
 
