@@ -16,7 +16,7 @@ export const AppBody = styled.header`
 
 export const BoxLogin = styled.div`
     background-color: #282c34;
-    height: 50vh;
+    height: 40vh;
     width: 30vw;
 
     border-radius: 25px;
@@ -30,7 +30,6 @@ export const BoxLogin = styled.div`
 
 export const BoxButton = styled.div`
     width: 25vw;
-    margin-bottom: 1rem;
 `;
 
 export const BoxLogo = styled.div`

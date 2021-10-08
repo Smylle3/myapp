@@ -3,7 +3,6 @@ import { App, AppBody, BoxLogin, BoxButton, BoxLogo, BoxLogoImg} from './styles'
 
 import Input from '../../components/inputs';
 import Button from '../../components/button';
-import TranspButton from '../../components/button_transp';
 import LinkButton from '../../components/link_button';
 
 import logo from '../../assets/ReactLogo.png'
@@ -11,10 +10,9 @@ import logo from '../../assets/ReactLogo.png'
 export default function Login() {
 
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        alert("Em construção!");
+        alert(email);
     };
 
   return (
@@ -22,13 +20,11 @@ export default function Login() {
       <AppBody>
         <a href="/"><BoxLogo><BoxLogoImg src={logo}/></BoxLogo></a>
         <BoxLogin>
-            <Input label="Email" value = {email} setValue = {setEmail}></Input>
-            <Input label="Senha" password value = {password} setValue = {setPassword}></Input>
+            <Input label="Para recuperar a conta digite seu email" value = {email} setValue = {setEmail}></Input>
             <BoxButton>
-                <Button onClick={handleLogin} >Entrar</Button>
-                <a href="signup"><TranspButton>Cadastrar</TranspButton></a>
+                <Button onClick={handleLogin}>Enviar</Button>
             </BoxButton>
-            <a href="/forgot-password"><LinkButton>Esqueci a senha</LinkButton></a>
+            <a href="/login"><LinkButton>Lembrou a senha?</LinkButton></a>
         </BoxLogin>
 
       </AppBody>
