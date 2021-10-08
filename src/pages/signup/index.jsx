@@ -3,7 +3,6 @@ import { App, AppBody, BoxLogin, BoxButton, BoxLogo, BoxLogoImg} from './styles'
 
 import Input from '../../components/inputs';
 import Button from '../../components/button';
-import TranspButton from '../../components/button_transp';
 import LinkButton from '../../components/link_button';
 
 import logo from '../../assets/ReactLogo.png'
@@ -15,13 +14,15 @@ export default function Login() {
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        alert("Em construção!");
+        alert(username);
+        alert(email);
+        alert(password);
     };
 
   return (
     <App>
       <AppBody>
-        <BoxLogo><BoxLogoImg src={logo}/></BoxLogo>
+        <a href="/"><BoxLogo><BoxLogoImg src={logo}/></BoxLogo></a>
         <BoxLogin>
             <Input label="Digite username" value = {username} setValue = {setUsername}></Input>
             <Input label="Digite seu email" value = {email} setValue = {setEmail}></Input>
@@ -30,7 +31,7 @@ export default function Login() {
             <BoxButton>
                 <Button onClick={handleLogin} >Enviar</Button>
             </BoxButton>
-            <a href="/login"><LinkButton>Fazer login</LinkButton></a>
+            <a href="/login"><LinkButton>Voltar ao login</LinkButton></a>
         </BoxLogin>
 
       </AppBody>
