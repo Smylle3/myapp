@@ -38,5 +38,10 @@ export const NormalInput = styled.input`
 
     &:focus {
         background-color: #3e4451;
+        border-width: 2px;
+    }
+    &:hover {
+        background-color: #3e4451;
+        border-width: 2px;
     }
 `;

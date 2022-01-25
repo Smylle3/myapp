@@ -9,14 +9,10 @@ import logo from '../../assets/ReactLogo.png'
 
 export default function Login() {
 
-    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        alert(username);
         alert(email);
-        alert(password);
     };
 
   return (
@@ -24,14 +20,11 @@ export default function Login() {
       <AppBody>
         <a href="/"><BoxLogo><BoxLogoImg src={logo}/></BoxLogo></a>
         <BoxLogin>
-            <Input label="Digite username" value = {username} setValue = {setUsername}></Input>
-            <Input label="Digite seu email" value = {email} setValue = {setEmail}></Input>
-            <Input label="Digite uma senha" password value = {password} setValue = {setPassword}></Input>
-            <Input label="Confirme sua senha" password value = {password} setValue = {setPassword}></Input>
+            <Input label="Para recuperar a conta digite seu email" value = {email} setValue = {setEmail}></Input>
             <BoxButton>
-                <Button onClick={handleLogin} >Enviar</Button>
+                <Button onClick={handleLogin}>Enviar</Button>
             </BoxButton>
-            <a href="/login"><LinkButton>Voltar ao login</LinkButton></a>
+            <a href="/login"><LinkButton>Lembrou a senha?</LinkButton></a>
         </BoxLogin>
 
       </AppBody>
