@@ -5,7 +5,7 @@ export const App = styled.div`
 `;
 
 export const AppHeader = styled.header`
-  background-color: #282c34;
+  background-color: var(--color-background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ export const Logo = styled.div`
   width: 50vmin;
   border-width: medium;
   border-style: solid;
-  border-color: #61dafb;
+  border-color: var(--color-primary);
   border-radius: 50vmin;
   display: flex;
   flex-direction: column;
@@ -30,9 +30,17 @@ export const Logo = styled.div`
   transition: 0.5s;
   &:hover {
     cursor: pointer;
-    background-color: #3e4451;
+  }
+  &:active{
+    
+    -webkit-transform: scale(100);
     transition: 0.5s;
   }
+`;
+
+export const Notification = styled.div`
+  color: var(--color-primary);
+  margin-bottom: 50px ;
 `;
 
 const rotate = keyframes`

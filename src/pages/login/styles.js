@@ -5,7 +5,7 @@ export const App = styled.div`
 `;
 
 export const AppBody = styled.header`
-    background-color: #61dafb;
+    background-color: var(--color-primary);
     min-height: 100vh;
 
     display: flex;
@@ -15,7 +15,7 @@ export const AppBody = styled.header`
 `;
 
 export const BoxLogin = styled.div`
-    background-color: #282c34;
+    background-color: var(--color-background);
     height: 50vh;
     width: 30vw;
 
